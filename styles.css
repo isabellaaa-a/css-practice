@@ -9,5 +9,37 @@ h1 {
 }
 /* Start here by styling the main div section */
 .main {
+    background-color: bisque;
+    width: fit-content;
+    padding: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 100px;
+    border-radius: 10px;
+    text-align: center;
+    border: 20px dotted orange;
+}
+
+.square {
+    border: 5px solid transparent;
+    cursor: pointer;
+}
+
+.square:hover {
+    background-color: rgb(255, 205, 118);
+    border: 5px solid orange;
+    border-radius: 10px;
     
+}
+
+.square::after {
+    content: "??";
+}
+
+.square:active::after {
+    content: "☠️";
+}
+
+#s6:active::after {
+    content: "👻";
 }
